@@ -1,0 +1,565 @@
+@media (max-width: 900px) {
+  .leftSideBar {
+    width: 80px;
+    padding: 12px;
+  }
+  .itemLink .list {
+    padding: 8px;
+    justify-content: center;
+  }
+  .itemLink .list p {
+    display: none;
+  }
+  .itemLink .list span {
+    font-size: 24px;
+  }
+  .logOut p {
+    display: none;
+  }
+  .logOut span {
+    width: 24px;
+    height: 24px;
+  }
+
+  .orderText {
+    display: none;
+  }
+  .btnAction span:nth-child(2) {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+
+  .cartContainer,
+  .notiContainer,
+  .discountOption {
+    width: 80%;
+  }
+  .discountOption {
+    height: auto;
+  }
+  .items .discountSet img {
+    width: 120%;
+  }
+
+  .section {
+    flex-direction: column;
+    height: 100%;
+    height: auto;
+  }
+  .leftSide,
+  .rightSide {
+    width: 100%;
+    height: auto;
+  }
+  .discountCard .card {
+    height: 400px;
+  }
+
+  .rightSide .shoes {
+    width: 100%;
+    height: 600px;
+  }
+  .rightSide .fashion {
+    height: 200px;
+  }
+
+  .sectionInvetory {
+    .inventoryHeader {
+      .titleInventory {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .stockControl {
+      .cardControl {
+        p:nth-child(1) {
+          font-size: 12px;
+          font-weight: 600;
+        }
+        p:nth-child(2) {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+    .stockList {
+      .stockHeader {
+        p {
+          font-size: 12px;
+        }
+      }
+      .stockItems {
+        .itemCard {
+          .product_name {
+            width: 35%;
+            .numberId {
+              width: 30px;
+              font-size: 12px;
+            }
+            .stockName {
+              font-size: 12px;
+              font-weight: 600;
+            }
+            img {
+              width: 46px;
+              border-radius: 8px;
+            }
+          }
+          .product_category {
+            font-size: 12px;
+            width: 15%;
+          }
+          .product_stock {
+            font-size: 12px;
+            width: 10%;
+          }
+          .product_cost {
+            font-size: 12px;
+            width: 10%;
+          }
+          .product_price {
+            font-size: 12px;
+            width: 10%;
+          }
+          .product_status {
+            font-size: 12px;
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+
+  .leftSideBar {
+    position: fixed;
+    top: 70px;
+    height: 0;
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all ease-in-out 0.25s;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .menuBnt {
+    display: flex;
+  }
+
+  .actionbtn {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff60;
+    backdrop-filter: blur(5px);
+    padding: 12px;
+    padding-bottom: 40px;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .cartTopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .cartContainer {
+    width: 95%;
+  }
+  .productsCart {
+    padding: 6px;
+  }
+  .cardItem .cartImage {
+    width: 60px;
+    height: 60px;
+  }
+  .costumerName {
+    height: 60px;
+  }
+  .costumerName .productName {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .costumerName .customerContact p {
+    font-size: 6px;
+    color: #7b7b7b;
+  }
+  .control {
+    height: 60px;
+  }
+  .control .price {
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .control .btn {
+    height: auto;
+  }
+  .control .btn button {
+    padding: 6px;
+  }
+  .control .btn button span {
+    font-size: 6px;
+  }
+
+  #Comfirm {
+    width: 24px;
+    height: 24px;
+  }
+  #shipping {
+    font-size: 10px;
+  }
+
+  .notiContainer {
+    width: 95%;
+  }
+
+  .discountCard .card {
+    height: 200px;
+  }
+
+  .discountOption {
+    width: 95%;
+    height: 400px;
+  }
+  .items {
+    height: 230px;
+  }
+  .nameProduct .name {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .nameProduct .price {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .nameProduct span {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .rightSide {
+    height: 450px;
+  }
+  .rightSide .shoes .shoeCard {
+    height: 100%;
+  }
+  .rightSide .fashion {
+    height: 200px;
+  }
+
+  .showProducts {
+    width: 300px;
+  }
+  .slider {
+    height: 200px;
+    border-radius: 12px;
+  }
+  .showProducts .title {
+    font-size: 16px;
+  }
+  .slides .imgSlideItem {
+    width: 260px;
+    height: 200px;
+  }
+  .showProducts .productsContainer {
+    border-radius: 12px;
+  }
+  .showProducts .productsContainer .card {
+    border-radius: 6px;
+  }
+
+  .showProducts .productsContainer .card {
+    height: 180px;
+  }
+  .showProducts .productsContainer .card:nth-child(1) {
+    width: 47.5%;
+  }
+  .showProducts .productsContainer .card:nth-child(2) {
+    width: 48%;
+  }
+  .showProducts .productsContainer .card:nth-child(4) {
+    width: 47.5%;
+  }
+  .showProducts .productsContainer .card:nth-child(3) {
+    width: 48%;
+  }
+  .showProducts .productsContainer .card:nth-child(5) {
+    width: 47.5%;
+  }
+  .showProducts .productsContainer .card:nth-child(6) {
+    width: 48%;
+  }
+
+  .showProducts .productsContainer .card .nameProduct .name {
+    font-size: 10px;
+  }
+  .showProducts .productsContainer .card .nameProduct .price {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .showProducts .productsContainer .card .nameProduct span {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .fashionTopup {
+    width: 300px;
+  }
+  .fashionSlider {
+    height: 200px;
+    border-radius: 12px;
+  }
+  .fashionSlides .imgSlidFashion {
+    width: 260px;
+    height: 200px;
+  }
+  .fashionTopup .title {
+    font-size: 16px;
+    height: 30px;
+  }
+  .fashionContainer {
+    border-radius: 12px;
+  }
+
+  article {
+    width: 47.5%;
+    border-radius: 6px;
+  }
+  article .name,
+  article .price {
+    font-size: 10px;
+  }
+  article .brand {
+    width: 100%;
+    font-size: 8px;
+  }
+  article .colors .colorItem {
+    gap: 2px;
+  }
+  article .colors .colorItem .item {
+    width: 9px;
+    height: 9px;
+  }
+  article #stock {
+    font-size: 5px;
+    font-weight: normal;
+    padding: 4px 8px;
+  }
+
+  .addProductTopup {
+    form {
+      width: 95%;
+      .formContainer {
+        .inputProduct {
+          label {
+            font-size: 12px;
+          }
+          input,
+          select {
+            width: 100%;
+            padding: 8px;
+            border: solid 2px #0000003e;
+            border-radius: 12px;
+            font-size: 11px;
+            outline: none;
+          }
+        }
+        .inputPrice {
+          .costSellPrice {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          }
+          label {
+            font-size: 12px;
+          }
+          input {
+            padding: 8px;
+          }
+        }
+        .uploadImage {
+          height: 150px;
+          .textUpload {
+            font-size: 14px;
+            span:nth-child(1) {
+              font-size: 32px;
+            }
+          }
+          img {
+            z-index: 10;
+            height: 100%;
+            border-radius: 12px;
+            display: none;
+          }
+        }
+      }
+      .btnAddProducts {
+        .adCancel {
+          height: 36px;
+        }
+        .addNewProduct {
+          height: 36px;
+        }
+      }
+    }
+  }
+
+  .sectionInvetory {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    .inventoryHeader {
+      padding: 12px;
+      height: auto;
+      .titleInventory {
+        p {
+          font-size: 12px;
+        }
+        button {
+          padding: 4px 8px;
+          font-size: 11px;
+        }
+        button:nth-child(2) {
+          font-size: 11px;
+          span {
+            font-size: 12px;
+          }
+        }
+        button:hover {
+          background-color: #a4b4ff;
+          transition: all ease-in-out 0.25s;
+        }
+        .filterOption {
+          width: 90%;
+          button {
+            padding: 6px;
+          }
+        }
+      }
+    }
+    .stockControl {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      .cardControl {
+        p:nth-child(1) {
+          font-size: 14px;
+          font-weight: normal;
+        }
+        p:nth-child(2) {
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+      .cardControl:nth-child(1) {
+        width: 47.5%;
+        height: 80px;
+      }
+      .cardControl:nth-child(2) {
+        width: 47.5%;
+        height: 80px;
+      }
+      .cardControl:nth-child(3) {
+        width: 47.5%;
+        height: 80px;
+      }
+      .cardControl:nth-child(4) {
+        width: 47.5%;
+        height: 80px;
+      }
+    }
+
+    .stockList {
+      height: 400px;
+      animation: reload 1s ease-in-out;
+      overflow-x: scroll;
+      align-items: start;
+      .stockHeader {
+        width: 700px;
+        padding: 12px;
+        justify-content: start;
+        p {
+          font-size: 12px;
+        }
+        p:nth-child(1) {
+          width: 200px;
+        }
+        p:nth-child(2) {
+          width: 100px;
+        }
+        p:nth-child(3) {
+          width: 100px;
+        }
+        p:nth-child(4) {
+          width: 100px;
+        }
+        p:nth-child(5) {
+          width: 100px;
+        }
+        p:nth-child(6) {
+          width: 100px;
+        }
+      }
+      .stockItems {
+        width: 700px;
+        .itemCard {
+          .product_name {
+            width: 200px;
+            .numberId {
+              font-size: 14px;
+            }
+            .stockName {
+              font-size: 14px;
+            }
+          }
+          .product_category {
+            width: 100px;
+          }
+          .product_stock {
+            width: 100px;
+          }
+          .product_cost {
+            width: 100px;
+          }
+          .product_price {
+            width: 100px;
+          }
+          .product_status {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

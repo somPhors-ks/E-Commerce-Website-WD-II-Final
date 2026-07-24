@@ -1,0 +1,330 @@
+@media (max-width: 900px) {
+  nav {
+    padding: 12px 40px;
+    .icon {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      gap: 2px;
+      padding: 6px;
+    }
+    ul li {
+      list-style: none;
+    }
+    ul li button {
+      p {
+        font-size: 11px;
+      }
+    }
+    .action {
+      gap: 6px;
+      #notificationBtn {
+        span {
+          font-size: 14px;
+        }
+      }
+
+      #signInBtn {
+        p {
+          display: none;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+      #Account {
+        img {
+          width: 28px;
+        }
+      }
+      .teamMenberLink {
+        p {
+          display: none;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 0px 40px;
+  }
+
+  .autoSlider {
+    .slides {
+      .imageSlide {
+        height: 400px;
+      }
+    }
+  }
+  .ourBrands {
+    flex-wrap: wrap;
+    .bran {
+      width: 18%;
+    }
+  }
+  .latestProduct {
+    justify-content: start;
+  }
+  article {
+    width: 31.3%;
+    .productsName {
+      gap: 8px;
+      .pName {
+        font-size: 16px;
+      }
+      #btnAddtoCart {
+        width: 100px;
+        font-size: 11px;
+        padding: 4px 12px;
+      }
+    }
+    .pPrice {
+      font-size: 18px;
+    }
+    .colors {
+      .colorItem {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    #btnLike {
+      top: 16px;
+      right: 16px;
+      padding: 8px;
+    }
+  }
+  .collection {
+    justify-content: start;
+  }
+  .collectionTitle {
+    select {
+      option {
+        font-size: 11px;
+      }
+    }
+  }
+  .clients {
+    .clientContainer {
+      .clientCard {
+        width: 32%;
+      }
+    }
+  }
+  footer {
+    height: 360px;
+    padding: 20px 40px;
+    .btnLink {
+      button {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    position: sticky;
+    ul {
+      position: fixed;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1000;
+      background-color: white;
+      padding: 0;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      top: 120%;
+      left: 0;
+      overflow: hidden;
+      /* height: 350px; */
+      height: 0;
+      transition: all ease-in-out 0.25s;
+    }
+    ul li button {
+      padding: 12px;
+      span {
+        position: relative;
+        font-size: 24px;
+        opacity: 1;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+  #btnMenu {
+    display: flex;
+  }
+  .notificationTopup {
+    .notiContainer {
+      width: 90%;
+    }
+  }
+  .signUpTopup {
+    form {
+      width: 90%;
+      .inputForm {
+        .btnSignIn {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  .autoSlider {
+    .slides {
+      gap: 2px;
+      .imageSlide {
+        width: 5%;
+        height: 260px;
+      }
+      .imageSlide:nth-child(1) {
+        width: 75%;
+      }
+    }
+  }
+  .title {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .ourBrands {
+    gap: 8px;
+    .bran {
+      width: 17%;
+      height: 46px;
+    }
+  }
+  article {
+    width: 46.5%;
+    .productsName {
+      .pName {
+        font-size: 12px;
+      }
+      #btnAddtoCart {
+        font-size: 8px;
+        padding: 8px;
+        width: 80px;
+        height: 28px;
+      }
+    }
+    .pNrand {
+      font-size: 8px;
+    }
+    .pPrice {
+      font-size: 12px;
+    }
+    .colors {
+      gap: 4px;
+      .colorItem {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+  .cartSlideIn {
+    .cartContainer {
+      width: 100%;
+      .productName {
+        #pName {
+          font-size: 20px;
+        }
+      }
+      .imageShow {
+        .calculate {
+          #pPrice {
+            font-size: 16px;
+          }
+          #titleSize {
+            font-size: 16px;
+          }
+          .sizes {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 8px;
+            #size {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .qty {
+            gap: 8px;
+            button {
+              width: 30px;
+              height: 30px;
+            }
+            #qtyValue {
+              width: 70%;
+              height: 30px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .collectionTitle {
+    .titleCollectio {
+      font-size: 20px;
+    }
+    select {
+      width: 170px;
+      padding: 12px;
+      border: solid 2px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      outline: none;
+    }
+  }
+  .clients {
+    .clientContainer {
+      flex-wrap: wrap;
+      .clientCard {
+        width: 100%;
+        .headText {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 20px;
+    height: 300px;
+    .btnLink {
+      gap: 20px;
+      button {
+        font-size: 10px;
+      }
+    }
+    .media {
+      margin-top: 0px;
+      a {
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+    .groupName {
+      flex-direction: column;
+      gap: 2px;
+      .titleName {
+        font-size: 6px;
+      }
+      .groupmember {
+        gap: 6px;
+        p {
+          font-size: 7px;
+        }
+      }
+    }
+  }
+}

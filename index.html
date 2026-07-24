@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="indexStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="conver">
+        <p class="title reveal-right">Welcome Back</p>
+        <a class="reveal-right" href="Website/website.html" target="_blank"
+          >Go to Website as Simple User ></a
+        >
+        <p class="showPassword reveal-right">
+          Password for Admin Sign in: <span>admin@123PHWDII</span>
+        </p>
+      </div>
+      <div class="form">
+        <form id="formSendData" class="reveal-up">
+          <p>Sign In as Administrator</p>
+          <div class="fill reveal-left">
+            <label for="">Username</label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              autocomplete="off"
+              id="usernameInput"
+            />
+          </div>
+          <div class="fill reveal-left">
+            <label for="">Email</label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              id="emailInput"
+              autocomplete="off"
+            />
+          </div>
+          <div class="fill reveal-left">
+            <label for="">Password</label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              id="passwordInput"
+            />
+          </div>
+          <button id="btnSignIn" class="reveal-left">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

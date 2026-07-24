@@ -1,0 +1,57 @@
+@media (max-width: 900px) {
+  .serviceHeader {
+    .imageCover {
+      .image {
+        height: 300px;
+      }
+      .image2 {
+        height: 300px;
+      }
+      .image3 {
+        height: 300px;
+      }
+      .image:hover,
+      .image3:hover,
+      .image2:hover {
+        transform: scale(1.01);
+        transition: all ease-in-out 0.25s;
+      }
+    }
+  }
+  .serviceItems {
+    justify-content: start;
+    .item {
+      width: 31.3%;
+      .itemTitle {
+        font-size: 14px;
+      }
+      .itemDescription {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .serviceHeader {
+    .imageCover {
+      .image {
+        height: 200px;
+      }
+      .image2 {
+        height: 200px;
+      }
+      .image3 {
+        height: 200px;
+      }
+    }
+  }
+  .serviceItems {
+    justify-content: start;
+    .item {
+      width: 100%;
+      .itemTitle {
+        font-size: 14px;
+      }
+    }
+  }
+}

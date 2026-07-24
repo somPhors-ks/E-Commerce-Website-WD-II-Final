@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="icon.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftSideBar" id="leftSideBar">
+        <div class="topSide">
+          <img src="../Image/logo.png" alt="" />
+          <ul class="itemLink">
+            <li>
+              <button class="list active" id="onExploreNew">
+                <span class="lets-icons--lightning icon-link"></span>
+                <p>Explore New</p>
+              </button>
+            </li>
+            <li>
+              <button class="list" id="onInventory">
+                <span class="streamline-plump--stock icon-link"></span>
+                <p>Inventory</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <button class="logOut" id="logOut">
+          <span class="cuida--logout-outline"></span>
+          <p>Log Out</p>
+        </button>
+      </div>
+      <div class="main">
+        <div class="header">
+          <div class="menuBnt">
+            <button id="menu">
+              <span class="gg--menu"></span>
+            </button>
+          </div>
+
+          <div class="orderText">
+            <p>37 Order</p>
+            <span>Last 7 days.</span>
+          </div>
+          <div class="btnLink">
+            <a class="btnLinkPage active" href="#">Dashboard</a>
+            <a
+              class="btnLinkPage"
+              href="../Website/website.html"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <div class="actionbtn">
+            <button class="btnAction" id="onBtnCart">
+              <span class="solar--cart-outline"></span> <span>Cart</span>
+            </button>
+
+            <button class="btnAction" id="onBtnNotification">
+              <span class="mingcute--notification-line"></span>
+            </button>
+
+            <button class="btnAction" id="onBtnAccount">
+              <img src="../Image/profile.png" alt="" />
+              <span id="accountName">Account Name</span>
+            </button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cartTopUp" id="cartTopUp">
+          <div class="cartContainer">
+            <header>
+              <img src="../Image/logo.png" alt="" />
+              <button id="cartClose">
+                <span class="ic--round-close"></span>
+              </button>
+            </header>
+            <div class="titleText" id="numberOfOrderCart">
+              Hi This is Our Cart Today! 🛒🛍️
+            </div>
+            <div class="itemCart">
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image2.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image1.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image3.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image5.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image4.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image6.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="cardItem">
+                <div class="productsCart">
+                  <div class="cartImage">
+                    <img src="../Image/Products/image7.jpg" alt="" />
+                  </div>
+                  <div class="costumerName">
+                    <p class="productName">Hochzeitstag</p>
+                    <div class="customerContact">
+                      <p>email: abc@123gmail.com</p>
+                      <p>Phone: 012 345 678</p>
+                      <p>Date: 16-Jul-2026</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="control">
+                  <div class="btn">
+                    <button id="Comfirm">
+                      <span
+                        class="streamline-block--basic-ui-confirm-user"
+                      ></span>
+                    </button>
+                    <span id="shipping"
+                      ><span class="hugeicons--tick-01"></span>Start
+                      shipping</span
+                    >
+                  </div>
+                  <div class="price">Price: 24.50$</div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="notificationTopup" id="notificationTopup">
+          <div class="notiContainer">
+            <header>
+              <img src="../Image/logo.png" alt="" />
+              <button id="onNotificationClose">
+                <span class="ic--round-close"></span>
+              </button>
+            </header>
+            <div class="mesage">
+              <img src="../Image/noNotification.png" alt="" />
+              <span>No Notification Yet</span>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="account" id="account">
+          <div class="accountContainer">
+            <button class="accountClose" id="onAccountClose">
+              <span class="ic--round-close"></span>
+            </button>
+            <div class="profile">
+              <img src="../Image/profile.png" alt="" />
+              <p class="name" id="accountNameShow">Account Name</p>
+              <p class="status" id="acoountEmailShow">Email</p>
+              <p class="status">Adnimistrator</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="section" id="section">
+          <div class="leftSide">
+            <div class="discountCard">
+              <div class="card">
+                <img
+                  class=""
+                  id="imgPosterDiscount50"
+                  src="../Image/p1-Banner.jpg"
+                  alt=""
+                />
+                <img
+                  class="hide"
+                  id="imgPosterDiscount40"
+                  src="../Image/Banner40.jpg"
+                  alt=""
+                />
+                <img
+                  class="hide"
+                  id="imgPosterDiscount30"
+                  src="../Image/Banner30.jpg"
+                  alt=""
+                />
+                <div class="description">
+                  <p id="discountCaption"></p>
+                  <button id="onDiscountSet">
+                    <span class="subway--round-arrow-1"></span>
+                  </button>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="discountTopup" id="discountTopup">
+                <div class="discountOption">
+                  <header>
+                    <img src="../Image/logo.png" alt="" />
+                    <button id="onDiscountClose">
+                      <span class="ic--round-close"></span>
+                    </button>
+                  </header>
+                  <div class="title">
+                    <p>Discount Option for This Month 🛒🛍️✨👟👔👖</p>
+                    <button id="onConfirmDiscount">Confirm</button>
+                    <div class="messageBox" id="messageBox">
+                      <div class="messageContainer">
+                        <p>Do you want to change</p>
+                        <div class="mesageBtn">
+                          <button id="onConfirmOK">Okay</button>
+                          <button class="cancelMessage" id="onConfirmCancel">
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="discountSet">
+                      <img
+                        class=""
+                        id="imgdiscount50"
+                        src="../Image/p1.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="hide"
+                        id="imgdiscount40"
+                        src="../Image/discount40.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="hide"
+                        id="imgdiscount30"
+                        src="../Image/discount30.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="option">
+                      <button class="optionItem" id="set50Discount">
+                        <img src="../Image/p1-Banner.jpg" alt="" />
+                      </button>
+                      <button class="optionItem" id="set40Discount">
+                        <img src="../Image/Banner40.jpg" alt="" />
+                      </button>
+                      <button class="optionItem" id="set30Discount">
+                        <img src="../Image/Banner30.jpg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <div class="card productsCardSlidein">
+                <button class="productSlideIn" id="onOpenProducts">
+                  <span class="ph--flow-arrow"></span>
+                </button>
+              </div>
+              <!--  -->
+              <div class="showProducts" id="showProducts">
+                <div class="button">
+                  <button class="btnProductsClose" id="onCloseProducts">
+                    <span class="ic--round-close"></span>
+                  </button>
+                </div>
+
+                <div class="slider">
+                  <div class="slides">
+                    <div class="imgSlideItem"></div>
+                    <div class="imgSlideItem"></div>
+                    <div class="imgSlideItem"></div>
+                    <div class="imgSlideItem"></div>
+                  </div>
+                </div>
+
+                <p class="title">Trending</p>
+                <div class="productsContainer">
+                  <div class="card">
+                    <div class="nameProduct">
+                      <p class="name">Minimalist Winter Street</p>
+                      <p class="price">Price: $127.49</p>
+                      <span>In Stock: 120</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="nameProduct">
+                      <p class="name">Minimalist Winter Street</p>
+                      <p class="price">Price: $127.49</p>
+                      <span>In Stock: 120</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="nameProduct">
+                      <p class="name">Minimalist Winter Street</p>
+                      <p class="price">Price: $127.49</p>
+                      <span>In Stock: 120</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="nameProduct">
+                      <p class="name">Minimalist Winter Street</p>
+                      <p class="price">Price: $127.49</p>
+                      <span>In Stock: 120</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <div class="products">
+              <div class="card">
+                <div class="nameProduct">
+                  <p class="name">Minimalist Winter Street</p>
+                  <p class="price">Price: $127.49</p>
+                  <span>In Stock: 120</span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="nameProduct">
+                  <p class="name">Minimalist Winter Street</p>
+                  <p class="price">Price: $127.49</p>
+                  <span>In Stock: 120</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightSide">
+            <div class="shoes">
+              <div class="shoeCard">
+                <div class="nameProduct">
+                  <p class="name">Nike Air Max 1</p>
+                  <p class="price">Price: $127.49</p>
+                  <span>In Stock: 120</span>
+                </div>
+              </div>
+              <div class="shoeCard">
+                <div class="nameProduct">
+                  <p class="name">Nike Air Max 1</p>
+                  <p class="price">Price: $127.49</p>
+                  <span>In Stock: 120</span>
+                </div>
+              </div>
+            </div>
+            <div class="fashion">
+              <button class="fashionSlideIn" id="onOpenFashion">
+                <span class="ph--flow-arrow"></span>
+              </button>
+            </div>
+            <!--  -->
+            <div class="fashionTopup" id="fashionTopup">
+              <div class="btnClose">
+                <button class="fashionClose" id="onfashionClose">
+                  <span class="ic--round-close"></span>
+                </button>
+              </div>
+
+              <div class="fashionSlider">
+                <div class="fashionSlides">
+                  <div class="imgSlidFashion"></div>
+                  <div class="imgSlidFashion"></div>
+                  <div class="imgSlidFashion"></div>
+                  <div class="imgSlidFashion"></div>
+                </div>
+              </div>
+
+              <p class="title">Treding</p>
+              <div class="fashionContainer">
+                <article>
+                  <img src="../Image/Products/image1.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$60.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image2.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$60.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image3.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$89.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image4.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$70.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image5.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$78.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image6.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$90.50</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image7.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$80.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image8.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$57.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="../Image/Products/image9.jpg" alt="products" />
+                  <p class="name">Products name</p>
+                  <span class="brand">Brand Name</span>
+                  <p class="price">$60.00</p>
+                  <div class="colors">
+                    <div class="colorItem">
+                      <div class="item blue"></div>
+                      <div class="item green"></div>
+                      <div class="item blueligth"></div>
+                      <div class="item pink"></div>
+                    </div>
+                    <button id="stock">In Stock</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <div class="sectionInvetory sectionChage" id="sectionInvetory">
+          <div class="inventoryHeader">
+            <div class="titleInventory">
+              <p>Inventory</p>
+              <div class="inventoryAction">
+                <button id="addProduct">Add New</button>
+                <button id="filterProduct">
+                  <span class="basil--filter-outline"></span>
+                  Filter
+                </button>
+
+                <!--  -->
+                <div class="addProductTopup" id="addProductTopup">
+                  <form action="" method="post">
+                    <div class="addheader">
+                      <p class="title">Add New Products 🛒</p>
+                      <button id="addProductClose" type="button">
+                        <span class="ic--round-close"></span>
+                      </button>
+                    </div>
+
+                    <div class="formContainer">
+                      <div class="inputProduct">
+                        <label for="name">Product Name</label>
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          id="name"
+                          placeholder="Product Name"
+                        />
+                      </div>
+                      <div class="inputProduct">
+                        <label for="category">Category</label>
+                        <select name="category" id="category">
+                          <option value="Shirt">Shirt</option>
+                          <option value="Pants">Pants</option>
+                          <option value="Shoes">Shoes</option>
+                        </select>
+                      </div>
+                      <div class="inputProduct">
+                        <label for="brandName">Brand Name</label>
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          id="brandName"
+                          placeholder="Brand Name"
+                        />
+                      </div>
+                      <div class="inputPrice">
+                        <div class="costSellPrice">
+                          <label for="stocknumber">Stock</label>
+                          <input
+                            autocomplete="off"
+                            type="number"
+                            typemode="numberic"
+                            id="stocknumber"
+                            placeholder="Stock"
+                            value="0"
+                          />
+                        </div>
+                        <div class="costSellPrice">
+                          <label for="cost">Cost Price</label>
+                          <input
+                            autocomplete="off"
+                            type="number"
+                            typemode="numberic"
+                            id="cost"
+                            placeholder="Cost Price"
+                            value="0"
+                          />
+                        </div>
+                        <div class="costSellPrice">
+                          <label for="sell">Sell Price</label>
+                          <input
+                            autocomplete="off"
+                            type="number"
+                            typemode="numberic"
+                            id="sell"
+                            placeholder="Sell Price"
+                            value="0"
+                          />
+                        </div>
+                      </div>
+                      <div class="uploadImage">
+                        <img
+                          id="imageUploadShow"
+                          src="../Image/Products/image1.jpg"
+                          alt="image1"
+                        />
+                        <div class="textUpload">
+                          <span class="lets-icons--upload-duotone"></span>
+                          <span>Upload Image</span>
+                        </div>
+                        <input type="file" id="imageInput" accept="image/*" />
+                      </div>
+                    </div>
+                    <div class="btnAddProducts">
+                      <button class="adCancel" type="button" id="addCancel">
+                        Reset
+                      </button>
+                      <button
+                        class="addNewProduct"
+                        type="button"
+                        id="addConfirm"
+                      >
+                        Confirm
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <!--  -->
+                <div class="filterOption" id="filterOption">
+                  <button id="filterAll" class="selected">All</button>
+                  <button id="filterShirts">Shirts</button>
+                  <button id="filterPants">Pants</button>
+                  <button id="filterShoes">Shoes</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="stockControl">
+              <div class="cardControl">
+                <p>Total Products</p>
+                <p id="totalProduct">00 Items</p>
+              </div>
+              <div class="cardControl">
+                <p>In Stock</p>
+                <p id="inStockProducts">00 Items</p>
+              </div>
+              <div class="cardControl">
+                <p>Out of Stock</p>
+                <p id="outOfStockProducts">00 Items</p>
+              </div>
+              <div class="cardControl">
+                <p>Total Price</p>
+                <p id="totalPrice">$00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="addRequier" id="addRequier">
+            <p class="textRequier">Please Input All Feild !!</p>
+            <button id="requierOk">Okay</button>
+          </div>
+
+          <div class="stockList">
+            <div class="stockHeader">
+              <p>Products</p>
+              <p>Category</p>
+              <p>Stock</p>
+              <p>Cost</p>
+              <p>Price</p>
+              <p>Status</p>
+            </div>
+            <div class="stockItems" id="stockItems">
+              <!-- <div class="itemCard"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Log Out -->
+
+    <div class="logOutAlert" id="logOutAlert">
+      <div class="logOutContainer">
+        <p>Are You Want to Log Out ?</p>
+        <div class="logOutBtn">
+          <button id="logOutCancel">Cancel</button>
+          <a href="../index.html">Yes</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>

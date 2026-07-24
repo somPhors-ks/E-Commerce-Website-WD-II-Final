@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+  .contactContainer {
+    flex-direction: column;
+    .info {
+      width: 100%;
+      .infoHeader {
+        font-size: 20px;
+      }
+      .descHeader {
+        font-size: 12px;
+      }
+      .location {
+        height: 220px;
+      }
+    }
+    .sendMessage {
+      width: 100%;
+      .messageHeader {
+        font-size: 20px;
+      }
+      form {
+        .fillItem {
+          flex-direction: column;
+          .fill {
+            width: 100%;
+            label {
+              font-size: 14px;
+            }
+          }
+        }
+        textarea {
+          width: 100%;
+          height: 160px;
+        }
+        #send {
+          width: 100%;
+          padding: 12px;
+          border-radius: 12px;
+          border: none;
+          background-color: #304ea8;
+          color: white;
+          cursor: pointer;
+          transition: all ease-in-out 0.25s;
+        }
+        #send:hover {
+          background-color: #17358e;
+          transition: all ease-in-out 0.25s;
+        }
+      }
+    }
+  }
+}

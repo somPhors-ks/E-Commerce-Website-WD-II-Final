@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icon.css" />
+    <link rel="stylesheet" href="productResponsive.css" />
+    <link rel="stylesheet" href="ServicesResponsive.css" />
+    <link rel="stylesheet" href="aboutUsResponsive.css">
+    <link rel="stylesheet" href="contactUsResponsive.css">
+  </head>
+  <body>
+    <nav class="reveal-up">
+      <button id="btnMenu"><span class="ep--menu"></span></button>
+
+      <a href="#" class="icon">
+        <img src="../Image/logo.png" alt="" />
+      </a>
+
+      <ul id="iconLink">
+        <li>
+          <button id="productBtn" class="selected">
+            <span class="material-symbols--home-rounded"></span>
+            <p>Products</p>
+          </button>
+        </li>
+        <li>
+          <button id="serviceBtn" class="">
+            <span class="griddy-icons--health-services-filled"></span>
+            <p>Services</p>
+          </button>
+        </li>
+        <li>
+          <button id="aboutUsBtn" class="">
+            <span class="mdi--about"></span>
+            <p>About Us</p>
+          </button>
+        </li>
+        <li>
+          <button id="contactBtn" class="">
+            <span class="mage--contact-book-fill"></span>
+            <p>Contact Us</p>
+          </button>
+        </li>
+      </ul>
+
+      <div class="action">
+        <button id="notificationBtn">
+          <span class="mingcute--notification-line"></span>
+        </button>
+        <button id="signInBtn">
+          <span class="si--sign-in-duotone"></span>
+          <p>Sign Up</p>
+        </button>
+        <button id="Account">
+          <img src="../Image/profile.png" alt="" />
+        </button>
+        <a class="teamMenberLink" href="#">
+          <span class="fluent--people-team-24-filled"></span>
+          <p>Team Member</p>
+        </a>
+      </div>
+    </nav>
+
+    <div class="notificationTopup" id="notificationTopup">
+      <div class="notiContainer">
+        <div class="notiHeader">
+          <img src="../Image/logo.png" alt="" />
+          <button id="notiCloseBtn">
+            <span class="hugeicons--cancel-01"></span>
+          </button>
+        </div>
+        <div class="message">
+          <div class="messageItem">
+            <p class="messageTitle">Welcome</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            </p>
+          </div>
+          <div class="messageItem">
+            <p class="messageTitle">Welcome</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            </p>
+          </div>
+          <div class="messageItem">
+            <p class="messageTitle">Welcome</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            </p>
+          </div>
+          <div class="messageItem">
+            <p class="messageTitle">Welcome</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            </p>
+          </div>
+          <div class="messageItem">
+            <p class="messageTitle">Welcome</p>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="signUpTopup" id="signUpTopup">
+      <form action="#" method="post">
+        <div class="singupHeader">
+          <img src="../Image/logo.png" alt="" />
+          <button id="signUpCloseBtn" type="button">
+            <span class="hugeicons--cancel-01"></span>
+          </button>
+        </div>
+        <p class="titleSignUp">Sign Up</p>
+        <div class="inputForm">
+          <div class="box">
+            <label for="">Email✉️</label>
+            <input
+              id="emailInput"
+              type="text"
+              placeholder="Email"
+              autocomplete="off"
+            />
+          </div>
+          <div class="box">
+            <label for="">Username</label>
+            <input
+              id="usernameInput"
+              type="text"
+              placeholder="Username"
+              autocomplete="off"
+            />
+          </div>
+          <div class="box">
+            <label for="">Password</label>
+            <input
+              id="passwordInput"
+              type="password"
+              placeholder="Password"
+              autocomplete="off"
+            />
+            <div class="eye">
+              <button id="btnShowPass" type="button">
+                <span class="solar--eye-outline"></span>
+              </button>
+              <button id="btnhidePass" type="button">
+                <span class="iconoir--eye-closed"></span>
+              </button>
+            </div>
+          </div>
+          <div class="box">
+            <label for="">Confirm Password</label>
+            <input
+              id="confirmPassInput"
+              type="password"
+              placeholder="Confirm Password"
+              autocomplete="off"
+            />
+            <div class="eye">
+              <button id="btnShowComPass" type="button">
+                <span class="solar--eye-outline"></span>
+              </button>
+              <button id="btnhideComPass" type="button">
+                <span class="iconoir--eye-closed"></span>
+              </button>
+            </div>
+          </div>
+          <div class="btnSignIn">
+            <button id="singInReset" type="reset">Reset</button>
+            <button id="singInConfirm" type="button">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="accountTopup" id="accountTopup">
+      <div class="btnClose">
+        <button id="accountCloseBtn" type="button">
+          <span class="hugeicons--cancel-01"></span>
+        </button>
+        <div class="acoountProfile">
+          <img src="../Image/profile.png" alt="" />
+          <p id="accountName">Account Name</p>
+          <p id="accountEmail">abc@123gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <main class="productsPage">
+      <div class="autoSlider">
+        <div class="slides">
+          <div class="imageSlide reveal-up"></div>
+          <div class="imageSlide reveal-up"></div>
+          <div class="imageSlide reveal-up"></div>
+          <div class="imageSlide reveal-up"></div>
+          <div class="imageSlide reveal-up"></div>
+          <div class="imageSlide reveal-up"></div>
+        </div>
+      </div>
+
+      <p class="title">Our Modern Brand Ambassador</p>
+      <div class="ourBrands">
+        <div class="bran reveal-up">
+          <img src="../Image/brand2.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand1.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand3.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand4.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand5.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand6.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand7.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand8.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand9.jpg" alt="Brand Name" />
+        </div>
+        <div class="bran reveal-up">
+          <img src="../Image/brand10.jpg" alt="Brand Name" />
+        </div>
+      </div>
+
+      <p class="title">Latest Collection</p>
+      <div class="latestProduct" id="latestProduct"></div>
+      <!--  -->
+      <div class="alertMessage" id="alertMessage">
+        <p>Please Sign Up First</p>
+        <button id="alertConfirm">Okay</button>
+      </div>
+      <!--  -->
+      <div class="cartSlideIn" id="cartSlideIn">
+        <div class="cartContainer">
+          <div class="cartHeader">
+            <img class="reveal-up" src="../Image/logo.png" alt="" />
+            <button id="cartCloseBtn" type="button">
+              <span class="hugeicons--cancel-01"></span>
+            </button>
+          </div>
+          <div class="productName">
+            <p id="pName">Products Name</p>
+            <p id="pBrand">Brand Name</p>
+          </div>
+          <div class="imageShow">
+            <img id="pImage" src="../Image/Products/image1.jpg" alt="" />
+            <div class="calculate">
+              <p id="pPrice">Price: $00.00</p>
+              <p id="titleSize">Size</p>
+              <div class="sizes">
+                <button id="size">XL</button>
+                <button id="size">M</button>
+                <button id="size">S</button>
+                <button id="size">XS</button>
+              </div>
+              <p id="titleSize">Quantity</p>
+              <div class="qty">
+                <button id="decrease">-</button>
+                <div id="qtyValue">1</div>
+                <button id="increase">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="priceDetail">
+            <p id="title">Details</p>
+            <p id="nameSelected">Name: Products Name</p>
+            <p id="sizeSelected">Size: S</p>
+            <p id="qtySelected">Quantity: 1</p>
+            <p id="totalSelected"></p>
+          </div>
+
+          <div class="cartBtn">
+            <button id="cartConfirm">Add to Pay</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="title">Most Popular Categories</p>
+      <div class="categories">
+        <div class="category reveal-right">
+          <img src="../Image/category1.jpg" alt="" />
+        </div>
+        <div class="category reveal-right">
+          <img src="../Image/category2.jpg" alt="" />
+        </div>
+        <div class="category reveal-left">
+          <img src="../Image/category3.jpg" alt="" />
+        </div>
+        <div class="category reveal-left">
+          <img src="../Image/category4.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="collectionTitle">
+        <p class="titleCollectio">All Collections</p>
+        <select name="collectionFiller" id="collectionFiller">
+          <option value="all">All Collections</option>
+          <option value="menShirs">Men Shirt Collections</option>
+          <option value="womenShirt">Women Shirt Collections</option>
+          <option value="menPants">Men Pants Collections</option>
+          <option value="womenPants">Women Pants Collections</option>
+          <option value="menShoes">Men Shoes Collections</option>
+          <option value="womenShoe">Women Shoes Collections</option>
+        </select>
+      </div>
+
+      <div class="collection" id="collection">
+        <!-- Card Container -->
+      </div>
+
+      <p class="title titleCenter">Our Happy Client</p>
+      <div class="clients">
+        <div class="clientContainer">
+          <div class="clientCard reveal-up">
+            <div class="profileImg">
+              <img src="../Image/profile2.png" alt="" />
+              <div class="name">
+                <p>Bro One</p>
+                <span>21-Jun-2026</span>
+              </div>
+            </div>
+            <p class="headText">A Cut Above the Rest</p>
+            <p class="description">
+              I recently visited this barber, and I must say it was a classic
+              barber experience . He took the time to understand exactly what I
+              wanted. He took the time to understand exactly what I wanted.
+            </p>
+          </div>
+          <div class="clientCard reveal-up">
+            <div class="profileImg">
+              <img src="../Image/profile3.png" alt="" />
+              <div class="name">
+                <p>Bro Two</p>
+                <span>21-Jun-2026</span>
+              </div>
+            </div>
+            <p class="headText">A Cut Above the Rest</p>
+            <p class="description">
+              I recently visited this barber, and I must say it was a classic
+              barber experience . He took the time to understand exactly what I
+              wanted. He took the time to understand exactly what I wanted.
+            </p>
+          </div>
+          <div class="clientCard reveal-up">
+            <div class="profileImg">
+              <img src="../Image/profile4.png" alt="" />
+              <div class="name">
+                <p>Bro Three</p>
+                <span>21-Jun-2026</span>
+              </div>
+            </div>
+            <p class="headText">A Cut Above the Rest</p>
+            <p class="description">
+              I recently visited this barber, and I must say it was a classic
+              barber experience . He took the time to understand exactly what I
+              wanted. He took the time to understand exactly what I wanted.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="servicesPage">
+      <div class="serviceHeader">
+        <p class="sTitle reveal-right">
+          Powerring Progress Through Technology Services
+        </p>
+        <div class="imageCover">
+          <div class="image reveal-up"></div>
+          <div class="image2 reveal-up"></div>
+          <div class="image3 reveal-up"></div>
+        </div>
+      </div>
+      <p class="title reveal-right">Our Services, All in One Place</p>
+
+      <div class="serviceItems">
+        <div class="item reveal-right">
+          <div class="itemIcon">
+            <span class="simple-icons--expressvpn"></span>
+          </div>
+          <p class="itemTitle">AI Size & Fit Recommendation</p>
+          <p class="itemDescription">
+            Uses customer measurements, body shape inputs, or sizing from brands
+            they already own to recommend the exact right size.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-right">
+          <div class="itemIcon">
+            <span class="game-icons--virtual-marker"></span>
+          </div>
+          <p class="itemTitle">Virtual Try-On (AR) & Custom Avatars</p>
+          <p class="itemDescription">
+            Lets shoppers upload a photo or use their webcam/AR to see how
+            garments, glasses, or accessories look on their specific body type.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-left">
+          <div class="itemIcon">
+            <span class="ic--baseline-style"></span>
+          </div>
+          <p class="itemTitle">Personal Styling & Curated Lookbooks</p>
+          <p class="itemDescription">
+            Offers 1-on-1 virtual styling sessions or AI-generated "Complete the
+            Look" recommendations based on style quizzes and past purchases.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-left">
+          <div class="itemIcon">
+            <span class="selfhst--interactive-brokers"></span>
+          </div>
+          <p class="itemTitle">
+            Interactive Capsule Wardrobe / Mix-and-Match Builder
+          </p>
+          <p class="itemDescription">
+            An interactive visual canvas where users drag and drop tops,
+            bottoms, and accessories to see how pieces layer together.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-right">
+          <div class="itemIcon">
+            <span class="game-icons--circular-saw"></span>
+          </div>
+          <p class="itemTitle">Circular Fashion & Resale / Trade-In Program</p>
+          <p class="itemDescription">
+            Allows customers to trade in gently used items from your brand for
+            store credit, or shop pre-owned certified inventory directly on
+            site.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-right">
+          <div class="itemIcon">
+            <span class="selfhst--live-blog"></span>
+          </div>
+          <p class="itemTitle">Live Video Shopping & Instant Consultations</p>
+          <p class="itemDescription">
+            Streams live product demos with host Q&A or provides on-demand
+            15-minute video chats with style experts.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-left">
+          <div class="itemIcon">
+            <span class="bxs--customize"></span>
+          </div>
+          <p class="itemTitle">
+            Bespoke Customization & Made-to-Order Monogramming
+          </p>
+          <p class="itemDescription">
+            Allows shoppers to personalize colors, add monograms, choose sleeve
+            lengths, or input custom tailor measurements before production
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+
+        <div class="item reveal-left">
+          <div class="itemIcon">
+            <span class="mingcute--vip-2-fill"></span>
+          </div>
+          <p class="itemTitle">VIP Membership & Style Subscription Boxes</p>
+          <p class="itemDescription">
+            Delivers curated seasonal outfits or offers exclusive access to
+            drops, member-only discounts, and free tailored alterations.
+          </p>
+          <button class="itemBtn">
+            <span class="basil--add-outline"></span>Read More
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main class="aboutUsPage">
+      <div class="aboutHeader">
+        <p>About US</p>
+        <span>Helping You Find the Perfect Collection.</span>
+      </div>
+      <div class="aboutCover">
+        <div class="coverItem reveal-right"></div>
+        <div class="coverItem reveal-right"></div>
+        <div class="coverItem reveal-up"></div>
+        <div class="coverItem reveal-left"></div>
+        <div class="coverItem reveal-left"></div>
+      </div>
+      <div class="bodyText">
+        <p class="aboutTitle reveal-right">OUR STORY</p>
+        <p class="aboutDesc reveal-right">
+          Fashion is more than what you wear—it's a reflection of your
+          personality, confidence, and lifestyle. Our journey began with a
+          simple vision: to create timeless fashion that combines modern trends,
+          exceptional quality, and everyday comfort. From our very first
+          collection, we have been dedicated to designing pieces that help
+          people express themselves with confidence. Every garment is
+          thoughtfully crafted using carefully selected fabrics, attention to
+          detail, and a commitment to lasting quality. We believe great style
+          should not only look beautiful but also feel comfortable and fit
+          effortlessly into your daily life. Inspired by creativity, culture,
+          and the latest fashion trends, our collections are designed to suit
+          every occasion—from casual everyday wear to elegant statement pieces.
+          We continuously explore new ideas while staying true to our promise of
+          delivering clothing that is stylish, versatile, and made to last. As
+          our brand has grown, so has our passion for serving our community.
+          Every customer who chooses our products becomes part of our story,
+          motivating us to innovate, improve, and create fashion that empowers
+          individuality. We are committed to providing an exceptional shopping
+          experience built on trust, quality, and customer satisfaction. Today,
+          we continue to embrace the belief that fashion is for everyone.
+          Whether you're discovering your signature style or refreshing your
+          wardrobe with the latest trends, we're here to help you look your
+          best, feel confident, and celebrate your unique identity through every
+          piece we create.
+        </p>
+      </div class="bodyText">
+      <div class="staticCostumer">
+        <div class="costumerCard reveal-up">
+          <p class="numberCos">50K+</p>
+          <p class="descCos">Happy Customers</p>
+        </div>
+        <div class="costumerCard reveal-up">
+          <p class="numberCos">10K+</p>
+          <p class="descCos">Orders Delivered</p>
+        </div>
+        <div class="costumerCard reveal-up">
+          <p class="numberCos">150+</p>
+          <p class="descCos">New Designs</p>
+        </div>
+        <div class="costumerCard reveal-up">
+          <p class="numberCos">98%</p>
+          <p class="descCos">Customer Satisfaction</p>
+        </div>
+      </div>
+      <div>
+        <p class="aboutTitle reveal-right">OUR MISSION</p>
+        <p class="aboutDesc reveal-right">
+          Our mission is to inspire confidence through fashion by creating
+          stylish, high-quality clothing that combines comfort, elegance, and
+          affordability. We are dedicated to designing collections that help
+          people express their individuality while embracing the latest trends
+          and timeless styles. We strive to deliver exceptional value through
+          premium craftsmanship, responsibly sourced materials, and outstanding
+          customer service. Every product we create reflects our commitment to
+          quality, innovation, and attention to detail. As we grow, our mission
+          remains the same: to build a fashion brand that empowers every
+          customer to look their best, feel confident, and celebrate their
+          unique style every day.
+        </p>
+      </div>
+      <div class="aboutAutoSlider reveal-up">
+        <div class="aboutSlides">
+          <div class="itemSlideImage"></div>
+          <div class="itemSlideImage"></div>
+          <div class="itemSlideImage"></div>
+        </div>
+      </div>
+    </main>
+
+    <main class="contactUsPage">
+      <div class="contactContainer">
+        <div class="info">
+          <p class="infoHeader reveal-right">Contact Information</p>
+          <span class="descHeader reveal-right">We Helping You Find the Perfect Collection.</span>
+          <div class="infoItems">
+            <div class="infoItem reveal-right">
+              <span class="heroicons--phone-solid"></span>
+              <p>(+885) 812 366 44</p>
+            </div>
+            <div class="infoItem reveal-right">
+              <span class="mage--email-fill"></span>
+              <p>info@gmail.com</p>
+            </div>
+            <div class="infoItem reveal-right">
+              <span class="weui--location-filled"></span>
+              <p>Phnom Pehn, Cambodia</p>
+            </div>
+            <div class="infoItem reveal-right">
+              <span class="bxs--time"></span>
+              <p>Monday - Sunday 6:00AM - 6:00PM</p>
+            </div>
+          </div>
+          <div class="location reveal-up">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250151.4636801482!2d104.72537423920629!3d11.579317637857407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1784799847954!5m2!1sen!2skh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+        <div class="sendMessage">
+          <p class="messageHeader reveal-left">Send Us a Message</p>
+          <span class="messageDesc reveal-left">Fill up the form and our team will get back to you with in 24 hours.</span>
+
+          <form action="#" method="post">
+            <div class="fillItem">
+              <div class="fill reveal-left">
+                <label for="">First Name</label>
+                <input type="text" placeholder="Enter First Name">
+              </div>
+              <div class="fill reveal-left">
+                <label for="">Last Name</label>
+                <input type="text" placeholder="Enter Last Name">
+              </div>
+            </div>
+            <div class="fillItem">
+              <div class="fill reveal-left">
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter Email">
+              </div>
+              <div class="fill reveal-left">
+                <label for="">Phone</label>
+                <input type="number" placeholder="Enter Phone">
+              </div>
+            </div>
+            <textarea name="" id="rextArea" class="reveal-up"></textarea>
+            <button id="send" type="button" class="reveal-up">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="">
+      <img class="reveal-up" src="../Image/logo.png" alt="" />
+      <div class="btnLink">
+        <button id="footerProducts" class="reveal-right">Products</button>
+        <button id="footerProducts" class="reveal-right">Services</button>
+        <button id="footerProducts" class="reveal-left">About Us</button>
+        <button id="footerProducts" class="reveal-left">Contact Us</button>
+      </div>
+      <div class="media">
+        <a href="#"><span class="logos--facebook"></span></a>
+        <a href="#"><span class="selfhst--telegram"></span></a>
+        <a href="#"><span class="selfhst--instagram"></span></a>
+      </div>
+      <div class="groupName">
+        <p class="titleName">Development By</p>
+        <div class="groupmember">
+          <p>1. Yorn Somphors</p>
+          <p>2. Koeun Kai</p>
+          <p>3. Chhun Chhenghor</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="website.js"></script>
+  </body>
+</html>
