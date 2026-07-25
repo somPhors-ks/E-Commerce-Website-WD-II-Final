@@ -116,6 +116,52 @@
       }
     }
   }
+
+  .teamMemberPopup {
+    flex-direction: column;
+    .titleDescription {
+      width: 100%;
+      img {
+        width: 160px;
+      }
+      .schoolName {
+        font-size: 36px;
+        color: green;
+        margin-bottom: 10px;
+      }
+      .subjects {
+        width: 60%;
+      }
+    }
+    .teamPicture {
+      width: 100%;
+    }
+    #teamCloseBtn {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      border: none;
+      border-radius: 50px;
+      background-color: #83838375;
+      color: white;
+      cursor: pointer;
+      transition: all ease-in-out 0.25s;
+      span {
+        font-size: 18px;
+        transition: all ease-in-out 0.5s;
+      }
+    }
+    #teamCloseBtn:hover {
+      background-color: rgb(212, 212, 212);
+      transform: scale(1.03);
+      transition: all ease-in-out 0.5s;
+    }
+  }
+
   footer {
     height: 360px;
     padding: 20px 40px;
@@ -296,6 +342,55 @@
       }
     }
   }
+
+  .teamMemberPopup {
+    flex-direction: column;
+    width: 100%;
+    .titleDescription {
+      width: 100%;
+      gap: 6px;
+      img {
+        width: 120px;
+      }
+      .schoolName {
+        font-size: 36px;
+        color: green;
+        margin-bottom: 10px;
+      }
+      .subjects {
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+    .teamPicture {
+      width: 100%;
+    }
+    #teamCloseBtn {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      border: none;
+      border-radius: 50px;
+      background-color: #83838375;
+      color: white;
+      cursor: pointer;
+      transition: all ease-in-out 0.25s;
+      span {
+        font-size: 18px;
+        transition: all ease-in-out 0.5s;
+      }
+    }
+    #teamCloseBtn:hover {
+      background-color: rgb(212, 212, 212);
+      transform: scale(1.03);
+      transition: all ease-in-out 0.5s;
+    }
+  }
+
   footer {
     padding: 20px;
     height: 300px;

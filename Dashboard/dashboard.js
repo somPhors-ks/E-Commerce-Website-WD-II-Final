@@ -518,7 +518,7 @@ addConfirm.onclick = () => {
     totalProduct.innerHTML = `${products.length} Items`;
     inStockProducts.innerHTML = `${inStock} Items`;
     outOfStockProducts.innerHTML = `${OutStock} Items`;
-    totalPrice.innerHTML = `$${price}`;
+    totalPrice.innerHTML = `$${price.toFixed(2)}`;
     name.value = "";
     category.value = "Shirt";
     brandName.value = "";

@@ -53,6 +53,18 @@ contactBtn.onclick = () => {
   contactUsPage.style.display = "flex";
 };
 
+//Team Member
+const teamMenberLink = document.getElementById("teamMenberLink");
+const teamMemberPopup = document.getElementById("teamMemberPopup");
+const teamCloseBtn = document.getElementById("teamCloseBtn");
+
+teamMenberLink.onclick = () => {
+  teamMemberPopup.style.transform = "scale(1)";
+};
+teamCloseBtn.onclick = () => {
+  teamMemberPopup.style.transform = "scale(0)";
+};
+
 // Notification
 const notificationBtn = document.getElementById("notificationBtn");
 const notificationTopup = document.getElementById("notificationTopup");
