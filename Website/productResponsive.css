@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   nav {
     padding: 12px 40px;
     .icon {
@@ -171,6 +171,21 @@
       }
     }
   }
+
+  .reveal-left {
+    opacity: 0.5;
+    transform: translateX(25px);
+    transition: all 0.5s ease;
+  }
+  .reveal-right {
+    opacity: 0.5;
+    transform: translateX(-25px);
+    transition: all 0.5s ease;
+  }
+  .show {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 @media (max-width: 600px) {
@@ -252,7 +267,8 @@
     width: 46.5%;
     .productsName {
       .pName {
-        font-size: 12px;
+        font-size: 10px;
+        font-weight: normal;
       }
       #btnAddtoCart {
         font-size: 8px;
@@ -421,5 +437,49 @@
         }
       }
     }
+  }
+
+  .getCartPopup {
+    height: 90%;
+    .cartContainer {
+      width: 95%;
+      .cartMessages {
+        .messageCartItem {
+          img {
+            width: 90px;
+          }
+          .cartDetial {
+            #ProductsName {
+              font-size: 12px;
+            }
+            #customerName,
+            #customerEmail,
+            #bookingDate,
+            #qtyProducts {
+              font-size: 9px;
+            }
+            #totalPriceProducts {
+              margin-top: 4px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reveal-left {
+    opacity: 0.5;
+    transform: translateX(15px);
+    transition: all 0.5s ease;
+  }
+  .reveal-right {
+    opacity: 0.5;
+    transform: translateX(-15px);
+    transition: all 0.5s ease;
+  }
+  .show {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }

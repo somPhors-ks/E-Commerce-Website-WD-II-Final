@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    name: "Fitch Long-Sleeve Rugby Polo",
+    name: "Fitch Long-Sleeve Rugby",
     brandName: "Abercrombie",
     category: "Shirt",
     cost: 120,
@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Purl Knit Quarter-Zip Jumper",
+    name: "Knit Quarter-Zip Jumper",
     brandName: "Zara",
     category: "Shirt",
     cost: 49.9,
@@ -61,7 +61,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Men's White Casual Ocean Wave",
+    name: "Men's White Casual Ocean",
     brandName: "EGNMCR",
     category: "Shirt",
     cost: 11.9,
@@ -85,7 +85,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Kotn x Barbarian Rugby Shirt",
+    name: "Kotn-Barbarian Rugby",
     brandName: "Kotn",
     category: "Shirt",
     cost: 140.89,
@@ -133,7 +133,7 @@ const products = [
   },
   {
     id: 12,
-    name: "Tie-Waist Satin Sleeveless Wrap",
+    name: "Tie-Waist Satin Sleeveless",
     brandName: "COMMENSE",
     category: "Shirt",
     cost: 34.4,
@@ -169,7 +169,7 @@ const products = [
   },
   {
     id: 15,
-    name: "Oversized Knit Boat Neck Bowknot",
+    name: "Oversized Knit Boat Neck",
     brandName: "CIDER",
     category: "Shirt",
     cost: 18.99,
@@ -218,7 +218,7 @@ const products = [
   },
   {
     id: 19,
-    name: "Moët Pintuck Balloon Wide Cotton",
+    name: "Moët Pintuck Balloon Wide",
     brandName: "BLACKUP GLOBAL",
     category: "Pants",
     cost: 45.8,
@@ -230,7 +230,7 @@ const products = [
   },
   {
     id: 20,
-    name: " KIDS Pleated Wide Pants slash",
+    name: " KIDS Pleated Wide Pants",
     brandName: "UNIQLO",
     category: "Pants",
     cost: 34.4,
@@ -266,7 +266,7 @@ const products = [
   },
   {
     id: 23,
-    name: "H&M Kids Sweatshirt Cargo",
+    name: "H&M Kids Sweatshirt",
     brandName: "Sweatshirt Cargo Shorts",
     category: "Pants",
     cost: 10.99,
@@ -315,7 +315,7 @@ const products = [
   },
   {
     id: 27,
-    name: "Woven Belted Mid Rise Bermuda",
+    name: "Woven Belted Mid Rise",
     brandName: "Cider",
     category: "Pants",
     cost: 28.8,
@@ -351,7 +351,7 @@ const products = [
   },
   {
     id: 30,
-    name: "Rita High Waisted Flared Short",
+    name: "Rita High Waisted Flared",
     brandName: "Shona Joy",
     category: "Pants",
     cost: 240,
@@ -375,7 +375,7 @@ const products = [
   },
   {
     id: 32,
-    name: "High Waist Belted Wide Leg",
+    name: "High Waist Belted Wide",
     brandName: "Ciber",
     category: "Pants",
     cost: 29.75,
@@ -412,7 +412,7 @@ const products = [
   },
   {
     id: 35,
-    name: "pair of strappy, square-toe block",
+    name: "pair of strappy, square-toe",
     brandName: "THE GLOW",
     category: "Shoe",
     cost: 50.8,
@@ -424,7 +424,7 @@ const products = [
   },
   {
     id: 36,
-    name: "Mango Criss-Cross Straps Sandals",
+    name: "Mango Criss-Cross Straps",
     brandName: "MANGO",
     category: "Shoe",
     cost: 60.98,
@@ -485,7 +485,7 @@ const products = [
   //
   {
     id: 41,
-    name: "Nike Air Force 1 '07 (White/Black)",
+    name: "Nike Air Force 1 (White/Black)",
     brandName: "Nike",
     category: "Shoe",
     cost: 115.99,
@@ -533,7 +533,7 @@ const products = [
   },
   {
     id: 45,
-    name: "Air Jordan 1 Retro High OG (Latte)",
+    name: "Air Jordan 1 Retro High OG",
     brandName: "Jordan ",
     category: "Shoe",
     cost: 167.89,
@@ -545,7 +545,7 @@ const products = [
   },
   {
     id: 46,
-    name: "Air Jordan 1 Retro High OG (Latte)",
+    name: "Air Jordan 1 Retro High OG",
     brandName: "Jordan",
     category: "Shoe",
     cost: 180.25,
@@ -569,7 +569,7 @@ const products = [
   },
   {
     id: 48,
-    name: "Wmns 550 (Summer Fog Dusk Blue)",
+    name: "Wmns 550 Summer Fog",
     brandName: "New Balance",
     category: "Shoe",
     cost: 29.75,

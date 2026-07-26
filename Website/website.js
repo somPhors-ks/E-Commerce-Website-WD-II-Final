@@ -62,7 +62,7 @@ contactBtn.onclick = () => {
   contactUsPage.style.display = "flex";
 };
 
-//Team Member
+//Team Member Pop Up
 const teamMenberLink = document.getElementById("teamMenberLink");
 const teamMemberPopup = document.getElementById("teamMemberPopup");
 const teamCloseBtn = document.getElementById("teamCloseBtn");
@@ -74,7 +74,7 @@ teamCloseBtn.onclick = () => {
   teamMemberPopup.style.transform = "scale(0)";
 };
 
-//Cart
+//Cart Pop Up
 const getCartPopup = document.getElementById("getCartPopup");
 const getCartBtn = document.getElementById("getCartBtn");
 const cartPopupCloseBtn = document.getElementById("cartPopupCloseBtn");
@@ -86,7 +86,7 @@ cartPopupCloseBtn.onclick = () => {
   getCartPopup.style.transform = "scale(0)";
 };
 
-// Notification
+// Notification Pop Up
 const notificationBtn = document.getElementById("notificationBtn");
 const notificationTopup = document.getElementById("notificationTopup");
 const notiCloseBtn = document.getElementById("notiCloseBtn");
@@ -98,7 +98,7 @@ notiCloseBtn.onclick = () => {
   notificationTopup.style.transform = "scale(0)";
 };
 
-// Sign Up
+// Sign Up Pop Up
 const signInBtn = document.getElementById("signInBtn");
 const signUpTopup = document.getElementById("signUpTopup");
 const signUpCloseBtn = document.getElementById("signUpCloseBtn");
@@ -294,7 +294,6 @@ function CardGenerate(products) {
 
 function CartMessageGenerate(messages) {
   const dateNow = new Date();
-
   return `
     <div class="messageCartItem">
       <img src="${messages.img}" alt="">
