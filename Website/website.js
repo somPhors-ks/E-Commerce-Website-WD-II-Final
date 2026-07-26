@@ -180,11 +180,8 @@ singInConfirm.onclick = () => {
   }
 
   if (email && name && pass && rePass) {
-    const accountName = document.getElementById("accountName");
-    const accountEmail = document.getElementById("accountEmail");
+    const refresPage = document.getElementById("refresPage");
 
-    signUpTopup.style.transform = "scale(0)";
-    signInBtn.style.display = "none";
     const newUser = {
       name: usernameInput.value,
       email: emailInput.value,
@@ -196,8 +193,17 @@ singInConfirm.onclick = () => {
       accountName.textContent = item.name;
       accountEmail.textContent = item.email;
     });
-    accountBtn.style.display = "flex";
     readySignUp = true;
+    refresPage.style.transform = "scale(1)";
+    document.body.style.opacity = "0.5";
+    setInterval(() => {
+      refresPage.style.transform = "scale(0)";
+      document.body.style.opacity = "1";
+
+      signUpTopup.style.transform = "scale(0)";
+      signInBtn.style.display = "none";
+      accountBtn.style.display = "flex";
+    }, 3000);
   }
 };
 
