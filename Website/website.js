@@ -1,7 +1,16 @@
 //
-import { getProducts, pushProduct, pushUser, getUser } from "../data.js";
+import {
+  getProducts,
+  pushProduct,
+  pushUser,
+  getUser,
+  pushCartMessage,
+  getCartMessage,
+} from "../data.js";
+
 const products = getProducts();
 const user = getUser();
+const messages = getCartMessage();
 
 // Change Page
 const btnChangePage = document.querySelectorAll("ul li button");
@@ -63,6 +72,18 @@ teamMenberLink.onclick = () => {
 };
 teamCloseBtn.onclick = () => {
   teamMemberPopup.style.transform = "scale(0)";
+};
+
+//Cart
+const getCartPopup = document.getElementById("getCartPopup");
+const getCartBtn = document.getElementById("getCartBtn");
+const cartPopupCloseBtn = document.getElementById("cartPopupCloseBtn");
+
+getCartBtn.onclick = () => {
+  getCartPopup.style.transform = "scale(1)";
+};
+cartPopupCloseBtn.onclick = () => {
+  getCartPopup.style.transform = "scale(0)";
 };
 
 // Notification
@@ -195,7 +216,7 @@ singInConfirm.onclick = () => {
     });
     readySignUp = true;
     refresPage.style.transform = "scale(1)";
-    document.body.style.opacity = "0.5";
+    document.body.style.opacity = "0.3";
     setInterval(() => {
       refresPage.style.transform = "scale(0)";
       document.body.style.opacity = "1";
@@ -203,7 +224,7 @@ singInConfirm.onclick = () => {
       signUpTopup.style.transform = "scale(0)";
       signInBtn.style.display = "none";
       accountBtn.style.display = "flex";
-    }, 3000);
+    }, 2000);
   }
 };
 
@@ -270,14 +291,33 @@ function CardGenerate(products) {
     </article>
   `;
 }
+
+function CartMessageGenerate(messages) {
+  const dateNow = new Date();
+
+  return `
+    <div class="messageCartItem">
+      <img src="${messages.img}" alt="">
+      <div class="cartDetial">
+        <p id="ProductsName">Product: ${messages.pName}</p>
+        <p id="customerName">Customer: ${messages.cusName}</p>
+        <p id="customerEmail">Email: ${messages.cusEmail}</p>
+        <p id="bookingDate">Date: ${dateNow.toLocaleDateString()}</p>
+        <p id="qtyProducts">QTY: ${messages.qty}</p>
+        <p id="totalPriceProducts">${messages.pPrice}</p>
+      </div>
+    </div>
+  `;
+}
+
 // Filter collection
 const collectionFiller = document.getElementById("collectionFiller");
 
 // Latest Collection
 const latestProduct = document.getElementById("latestProduct");
 
-function productsRandom(array) {
-  const arr = [...array];
+function productsRandom(p) {
+  const arr = [...p];
 
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -411,6 +451,41 @@ cartCloseBtn.onclick = () => {
   cartSlideIn.style.transform = "translateX(100%)";
 };
 
+// Booking
+const cartConfirm = document.getElementById("cartConfirm");
+
+cartConfirm.onclick = function (e) {
+  e.preventDefault();
+  const items = e.target.closest("#cartSlideIn");
+  const image = items.querySelector("#pImage");
+  const pName = items.querySelector("#pName");
+  const qty = items.querySelector("#qtyValue");
+  const pPrice = items.querySelector("#totalSelected");
+
+  const cusName = document.getElementById("accountName");
+  const cusEmail = document.getElementById("accountEmail");
+  const cartMessages = document.getElementById("cartMessages");
+
+  const customerDetail = {
+    img: image.src,
+    pName: pName.textContent,
+    qty: qty.textContent,
+    pPrice: pPrice.textContent,
+    cusName: cusName.textContent,
+    cusEmail: cusEmail.textContent,
+  };
+  pushCartMessage(customerDetail);
+  refresPage.style.transform = "scale(1)";
+  document.body.style.opacity = "0.3";
+  items.style.transform = "translateX(100%)";
+  cartMessages.innerHTML = messages.map((m) => CartMessageGenerate(m)).join("");
+
+  setInterval(() => {
+    refresPage.style.transform = "scale(0)";
+    document.body.style.opacity = "1";
+  }, 2000);
+};
+
 // Like Selected
 const likeActive = document.querySelectorAll("article #btnLike");
 
@@ -456,14 +531,14 @@ decrease.onclick = () => {
   qtyValue.textContent = qtyProduct;
   qtySelected.textContent = "Quantity: " + qtyValue.textContent;
   let totalPrice = Number(pPrice.textContent.slice(1)) * qtyProduct;
-  totalSelected.textContent = "Total: $" + totalPrice;
+  totalSelected.textContent = "Total: $" + totalPrice.toFixed(2);
 };
 increase.onclick = () => {
   qtyProduct++;
   qtyValue.textContent = qtyProduct;
   qtySelected.textContent = "Quantity: " + qtyValue.textContent;
   let totalPrice = Number(pPrice.textContent.slice(1)) * qtyProduct;
-  totalSelected.textContent = "Total: $" + totalPrice;
+  totalSelected.textContent = "Total: $" + totalPrice.toFixed(2);
 };
 
 // Readd to Cart
@@ -540,12 +615,12 @@ setInterval(() => {
 
 // Animation Scroll
 const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+  (relay) => {
+    relay.forEach((relay) => {
+      if (relay.isIntersecting) {
+        relay.target.classList.add("show");
       } else {
-        entry.target.classList.remove("show");
+        relay.target.classList.remove("show");
       }
     });
   },

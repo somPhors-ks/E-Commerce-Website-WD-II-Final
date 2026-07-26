@@ -544,12 +544,25 @@ addCancel.onclick = () => {
 const logOut = document.getElementById("logOut");
 const logOutAlert = document.getElementById("logOutAlert");
 const logOutCancel = document.getElementById("logOutCancel");
+const logOutYes = document.getElementById("logOutYes");
+
+const reloadPage = document.getElementById("reloadPage");
 
 logOut.onclick = () => {
   logOutAlert.style.transform = "scale(1)";
 };
 logOutCancel.onclick = () => {
   logOutAlert.style.transform = "scale(0)";
+};
+logOutYes.onclick = () => {
+  reloadPage.style.transform = "scale(1)";
+  document.body.style.opacity = "0.3";
+
+  setInterval(() => {
+    reloadPage.style.transform = "scale(0)";
+    document.body.style.opacity = "1";
+    window.location.href = "../index.html";
+  }, 2000);
 };
 
 // Side Bar Responsive

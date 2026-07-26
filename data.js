@@ -587,10 +587,20 @@ export function getProducts() {
   return products;
 }
 
+//
 const user = [];
 export function pushUser(u) {
   user.push(u);
 }
 export function getUser() {
   return user;
+}
+
+//
+const cartMessage = [];
+export function pushCartMessage(m) {
+  cartMessage.push(m);
+}
+export function getCartMessage() {
+  return cartMessage;
 }

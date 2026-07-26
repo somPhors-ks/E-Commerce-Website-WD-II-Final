@@ -1833,7 +1833,7 @@ article #stock {
       align-items: center;
       gap: 10px;
       #logOutCancel,
-      a {
+      #logOutYes {
         display: block;
         text-decoration: none;
         background-color: #e3e3e3;
@@ -1845,16 +1845,32 @@ article #stock {
         color: #000000;
         transition: all ease-in-out 0.25s;
       }
-      a {
+      #logOutYes {
         background-color: #ce3c3c;
         color: #ffffff;
       }
       #logOutCancel:hover,
-      a:hover {
+      #logOutYes:hover {
         transform: scale(1.03);
         transition: all ease-in-out 0.25s;
       }
     }
+  }
+}
+
+#reloadPage {
+  transform: scale(0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 180px;
   }
 }
 

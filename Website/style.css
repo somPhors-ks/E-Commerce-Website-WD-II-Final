@@ -21,7 +21,6 @@ nav {
   height: 80px;
   background-color: white;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
-  /* backdrop-filter: blur(5px); */
   padding: 12px 80px;
   .icon {
     width: 125px;
@@ -78,7 +77,8 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    #notificationBtn {
+    #notificationBtn,
+    #getCartBtn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -171,6 +171,120 @@ nav {
 #btnMenu:hover {
   background-color: #cbcbcb;
   transition: all ease-in-out 0.25s;
+}
+
+.getCartPopup {
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+  transition: all ease-in-out 0.25s;
+  .cartContainer {
+    width: 700px;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    .cartHeader {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background-color: #e7e7e7;
+      padding: 12px;
+      border-radius: 12px;
+      img {
+        width: 125px;
+      }
+      #cartPopupCloseBtn {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all ease-in-out 0.25s;
+        span {
+          font-size: 16px;
+        }
+      }
+      #cartPopupCloseBtn:hover {
+        background-color: #cbcbcb;
+        transition: all ease-in-out 0.25s;
+      }
+    }
+    .cartMessages {
+      width: 100%;
+      height: 410px;
+      background-color: #e7e7e7;
+      border-radius: 12px;
+      padding: 12px;
+      overflow: scroll;
+      scrollbar-width: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 12px;
+      .messageCartItem {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 12px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 12px;
+        transition: all ease-in-out 0.25s;
+        img {
+          width: 160px;
+          border-radius: 8px;
+        }
+        .cartDetial {
+          display: flex;
+          flex-direction: column;
+          #ProductsName {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          #customerName,
+          #customerEmail,
+          #bookingDate,
+          #qtyProducts {
+            font-size: 12px;
+            color: rgb(95, 95, 95);
+          }
+          #totalPriceProducts {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #d64764;
+          }
+        }
+      }
+      .messageCartItem:hover {
+        transform: scale(1.01);
+        background-color: rgb(218, 218, 218);
+        transition: all ease-in-out 0.25s;
+      }
+    }
+  }
 }
 
 .notificationTopup {

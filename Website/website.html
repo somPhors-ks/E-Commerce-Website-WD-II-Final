@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Website</title>
     <link rel="shortcut icon" href="../Image/newlogo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="icon.css" />
@@ -48,6 +48,9 @@
       </ul>
 
       <div class="action">
+        <button id="getCartBtn">
+          <span class="solar--cart-3-bold"></span>
+        </button>
         <button id="notificationBtn">
           <span class="mingcute--notification-line"></span>
         </button>
@@ -65,6 +68,31 @@
       </div>
     </nav>
 
+    <div class="getCartPopup" id="getCartPopup">
+      <div class="cartContainer">
+        <div class="cartHeader">
+          <img src="../Image/logo.png" alt="" />
+          <button id="cartPopupCloseBtn">
+            <span class="hugeicons--cancel-01"></span>
+          </button>
+        </div>
+
+        <div class="cartMessages" id="cartMessages">
+          <!-- <div class="messageCartItem">
+            <img src="../Image/Products/image1.jpg" alt="">
+            <div class="cartDetial">
+              <p id="ProductsName">Product Name</p>
+              <p id="customerName">Customer Name</p>
+              <p id="customerEmail">Customer Email</p>
+              <p id="bookingDate">26-Jul-2026</p>
+              <p id="qtyProducts">Qty</p>
+              <p id="totalPriceProducts">$00.00</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
     <div class="notificationTopup" id="notificationTopup">
       <div class="notiContainer">
         <div class="notiHeader">
@@ -77,31 +105,37 @@
           <div class="messageItem">
             <p class="messageTitle">Welcome</p>
             <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              Hi, thanks for signing up to receive updates from our store Save 10% on your first order with the code FIRST10
             </p>
           </div>
           <div class="messageItem">
-            <p class="messageTitle">Welcome</p>
+            <p class="messageTitle">Order</p>
             <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              Hi, thanks for your order! View details and more.
             </p>
           </div>
           <div class="messageItem">
-            <p class="messageTitle">Welcome</p>
+            <p class="messageTitle">Delivery</p>
             <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              Hi, it looks like we missed you! Your shipment from our store can be picked up anytime after 9 a.m.
             </p>
           </div>
           <div class="messageItem">
-            <p class="messageTitle">Welcome</p>
+            <p class="messageTitle">Program </p>
             <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              Hi Join our customer loyalty program to earn points and receive exclusive deals at our store.
             </p>
           </div>
           <div class="messageItem">
-            <p class="messageTitle">Welcome</p>
+            <p class="messageTitle">Subscription</p>
             <p class="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              Earn 10% off your next purchase by signing up for our Subscribe & Save offer! Check out our website for more details.
+            </p>
+          </div>
+          <div class="messageItem">
+            <p class="messageTitle">New Item</p>
+            <p class="desc">
+              Since you love, we know you’ll love our new product, Demand is high – head to our store quickly before we sell out .
             </p>
           </div>
         </div>
@@ -290,10 +324,12 @@
           </div>
 
           <div class="cartBtn">
-            <button id="cartConfirm">Add to Pay</button>
+            <button id="cartConfirm">Booking</button>
           </div>
         </div>
       </div>
+
+      <div class="qrScan"></div>
 
       <p class="title">Most Popular Categories</p>
       <div class="categories">
