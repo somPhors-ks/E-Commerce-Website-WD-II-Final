@@ -464,7 +464,7 @@
           transition: all ease-in-out 0.25s;
         }
         .filterOption {
-          width: 90%;
+          width: 200px;
           button {
             padding: 6px;
           }

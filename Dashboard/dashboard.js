@@ -460,7 +460,6 @@ filterShoes.onclick = () => {
 };
 
 // Add Product
-
 const addProduct = document.getElementById("addProduct");
 const addProductClose = document.getElementById("addProductClose");
 const addProductTopup = document.getElementById("addProductTopup");
