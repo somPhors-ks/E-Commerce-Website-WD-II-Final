@@ -365,43 +365,43 @@ collectionFiller.addEventListener("change", () => {
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   } else if (collectionFiller.value === "menShirs") {
     collection.innerHTML = menShirs
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   } else if (collectionFiller.value === "womenShirt") {
     collection.innerHTML = womenShirt
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   } else if (collectionFiller.value === "menPants") {
     collection.innerHTML = menPants
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   } else if (collectionFiller.value === "womenPants") {
     collection.innerHTML = womenPants
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   } else if (collectionFiller.value === "menShoes") {
     collection.innerHTML = menShoes
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   } else if (collectionFiller.value === "womenShoe") {
     collection.innerHTML = womenShoe
       .map((p) => CardGenerate(p))
       .slice(0, 8)
       .join("");
-    observeRevealElements();
+    revealElements();
   }
 });
 
@@ -615,23 +615,23 @@ setInterval(() => {
 
 // Animation Scroll
 const observer = new IntersectionObserver(
-  (relay) => {
-    relay.forEach((relay) => {
-      if (relay.isIntersecting) {
-        relay.target.classList.add("show");
+  (objects) => {
+    objects.forEach((ob) => {
+      if (ob.isIntersecting) {
+        ob.target.classList.add("show");
       } else {
-        relay.target.classList.remove("show");
+        ob.target.classList.remove("show");
       }
     });
   },
   { threshold: 0.1 },
 );
 
-function observeRevealElements() {
+function revealElements() {
   document
     .querySelectorAll(".reveal-up, .reveal-left, .reveal-right")
     .forEach((el) => {
       observer.observe(el);
     });
 }
-observeRevealElements();
+revealElements();

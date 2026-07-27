@@ -48,23 +48,23 @@ formSendData.addEventListener("submit", function (e) {
 
 // Animation Scroll
 const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+  (objects) => {
+    objects.forEach((ob) => {
+      if (ob.isIntersecting) {
+        ob.target.classList.add("show");
       } else {
-        entry.target.classList.remove("show");
+        ob.target.classList.remove("show");
       }
     });
   },
   { threshold: 0.1 },
 );
 
-function observeRevealElements() {
+function revealElements() {
   document
     .querySelectorAll(".reveal-up, .reveal-left, .reveal-right")
     .forEach((el) => {
       observer.observe(el);
     });
 }
-observeRevealElements();
+revealElements();
