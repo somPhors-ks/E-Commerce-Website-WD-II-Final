@@ -85,7 +85,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Kotn-Barbarian Rugby",
+    name: "Kotn Barbarian Rugby",
     brandName: "Kotn",
     category: "Shirt",
     cost: 140.89,
@@ -460,7 +460,7 @@ const products = [
   },
   {
     id: 39,
-    name: "Jessie Square-Toe Sandals Heel",
+    name: "Jessie Square Toe Sandals",
     brandName: "Aeyde",
     category: "Shoe",
     cost: 125.99,

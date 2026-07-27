@@ -240,6 +240,32 @@ setInterval(() => {
   }
 }, 4000);
 
+function fashionCartGenerate(products) {
+  return `
+    <article>
+      <img src="${products.image}" />
+      <p class="name">${products.name}</p>
+      <span class="brand">${products.brandName}</span>
+      <p class="price">$${products.price}</p>
+      <div class="colors">
+        <div class="colorItem">
+          <div class="item blue"></div>
+          <div class="item green"></div>
+          <div class="item blueligth"></div>
+          <div class="item pink"></div>
+        </div>
+        <button id="stock">${products.status}</button>
+      </div>
+    </article>
+  `;
+}
+
+const fashionContainer = document.querySelector(".fashionContainer");
+fashionContainer.innerHTML = products
+  .slice(0, 20)
+  .map((p) => fashionCartGenerate(p))
+  .join("");
+
 // Inventory
 const totalProduct = document.getElementById("totalProduct");
 const inStockProducts = document.getElementById("inStockProducts");
@@ -278,7 +304,7 @@ function createCardStockItems(products) {
       <div class="product_stock">${products.stock}</div>
       <div class="product_cost">$${products.cost}</div>
       <div class="product_price">$${products.price}</div>
-      <div class="product_status">${products.status}</div>
+      <div class="product_status"><span>${products.status}</span></div>
     </div>
   `;
 }

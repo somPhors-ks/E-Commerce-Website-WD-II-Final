@@ -240,7 +240,7 @@ accountCloseBtn.onclick = () => {
   accountTopup.style.transform = "translateX(100%)";
 };
 
-// Auto Slide
+// Auto Size Image Cover
 const image = document.querySelectorAll(".slides .imageSlide");
 let imageIndex = 0;
 
@@ -268,7 +268,7 @@ setInterval(() => {
   }
 }, 8000);
 
-// Card Generator
+// Card Generate
 function CardGenerate(products) {
   return `
     <article class="reveal-up">
@@ -292,6 +292,7 @@ function CardGenerate(products) {
   `;
 }
 
+// Message Generate
 function CartMessageGenerate(messages) {
   const dateNow = new Date();
   return `
